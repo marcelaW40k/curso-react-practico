@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/curso-react-practico/static/css/main.9820d216.css",
+    "main.js": "/curso-react-practico/static/js/main.03339527.js",
+    "static/js/787.f01a2baf.chunk.js": "/curso-react-practico/static/js/787.f01a2baf.chunk.js",
+    "index.html": "/curso-react-practico/index.html",
+    "main.9820d216.css.map": "/curso-react-practico/static/css/main.9820d216.css.map",
+    "main.03339527.js.map": "/curso-react-practico/static/js/main.03339527.js.map",
+    "787.f01a2baf.chunk.js.map": "/curso-react-practico/static/js/787.f01a2baf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9820d216.css",
+    "static/js/main.03339527.js"
+  ]
+}
