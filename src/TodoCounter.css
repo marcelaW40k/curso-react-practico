@@ -1,6 +1,4 @@
-:root{
-    
-}
+
 h1 {
     font-size: "24px";
     text-align: "center";
@@ -77,14 +75,14 @@ body {
     /* background-color: #CCC; */
   }
   .card-check--active{
-   background-color: #aba0a0; 
+   background-color: #c1c1c1; 
   }
   .Icon-check {
     position: absolute;
     left: 12px;
   }
   .Icon-check--active {
-    color: #4caf50;
+    color: #14b31b;
   }
   
   .Icon-delete {
@@ -126,4 +124,59 @@ body {
     background-clip: text;
     color: transparent;
     text-shadow: 2px 2px 4px rgb(49 49 49 / 50%);
+  }
+
+  /* TodoLoading */
+  .loading-task{
+    width: 80vh;
+    padding: 12px 0;
+}
+  .LoadingTodo-text {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  
+  .loading-check,
+  .loading-delete {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+  }
+  .loading-check {
+    position: absolute;
+    left: 12px;
+    top: 17px;
+  }
+  .loading-delete {
+    position: absolute;
+    top: 14px;
+    right: 0;
+  }
+
+  .loading-task,
+  .loading-delete,
+  .LoadingTodo-text,
+  .loading-check {
+    background: linear-gradient(90deg, rgb(200, 200, 200), rgb(124, 124, 124));
+    background-size: 400% 400%;
+    animation: loadingAnimation 3s ease-in-out infinite;
+	
+  }
+  @keyframes loadingAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
