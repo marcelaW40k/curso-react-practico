@@ -1,9 +1,4 @@
-import { useContext } from "react";
-import { TodoContext } from "../App/TodoContext";
-
-function TodoCounter() {
-  const { completedTodos, totalTodos } = useContext(TodoContext);
-
+function TodoCounter({ completedTodos, totalTodos }) {
   const message =
     completedTodos >= 1 && totalTodos >= 1 && completedTodos === totalTodos
       ? "!Felicitaciones has completado todos los TODOs!"

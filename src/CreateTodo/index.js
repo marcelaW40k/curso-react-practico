@@ -1,9 +1,6 @@
-import React, { useContext, useState } from "react";
-import { TodoContext } from "../App/TodoContext";
+import React, { useState } from "react";
 
-function CreateTodo() {
-  const { addTodo } = useContext(TodoContext);
-
+function CreateTodo({ addTodo }) {
   const [newTodoValue, setNewTodoValue] = useState("");
 
   const onSubmit = (event) => {
